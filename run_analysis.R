@@ -57,6 +57,7 @@ tidy.data.mean <- tidy.data.mean[, !(colnames(tidy.data.mean) %in% c("activity",
 # Persist the tidy data sets to file
 # First tidy data set is tidy.data
 # Second tidy data set is tidy.data.mean
-write.table(tidy.data, "tidy.data.txt")
-write.table(tidy.data.mean, "tidy.data.mean.txt")
+write.table(tidy.data, "tidy.data.txt", row.names=FALSE)
+write.table(tidy.data.mean, "tidy.data.mean.txt", row.names = FALSE
+            )
 
